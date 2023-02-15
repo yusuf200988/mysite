@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li><li>
+                    <a href="{% url 'posts' %}">Posts</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+    </body>
+
+</html>
+
+{% block content %}
+
+{% endblock content %}

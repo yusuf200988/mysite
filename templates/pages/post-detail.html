@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <h1> {{ post.title}} </h1><p>{{ username }}</p>
+        <hr>
+        <img src="{{ post.image }}" height="400">
+        <p> {{ post.description }}</p>
+    </body>
+
+</html>
+{% endblock content %}
